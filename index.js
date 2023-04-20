@@ -63,7 +63,7 @@ app.get("/callback", (req, res) => {
     },
   })
     .then((response) => {
-      console.log(res.status);
+      console.log(response.status);
       if (response.status === 200) {
         const { access_token, refresh_token, expires_in } = response.data;
 
