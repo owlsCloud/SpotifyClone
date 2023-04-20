@@ -6,9 +6,7 @@
   "scripts": {
     "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
     "server": "node index.js",
-    "client": "cd spotify-client && npm start",
-    "postinstall": "cd spotify-client && npm install",
-    "build": "cd spotify-client/ && npm install && npm run build"
+    "build": "npm run build"
   },
   "author": "",
   "license": "ISC",

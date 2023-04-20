@@ -108,8 +108,10 @@ app.get("/refresh_token", (req, res) => {
 });
 
 // All remaining requests return the React app, so it can handle routing.
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "./spotify-client/build", "index.html"));
-});
+// app.get("*", (req, res) => {
+//   res.sendFile(path.resolve(__dirname, "./spotify-client/build", "index.html"));
+// });
 
-app.listen(PORT, () => {});
+app.listen(PORT, () => {
+  console.log("hello");
+});
