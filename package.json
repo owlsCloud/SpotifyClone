@@ -3,13 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "engines": {
-    "node": "18.15.0"
-  },
-  "cacheDirectories": [
-    "node_modules",
-    "spotify-client/node_modules"
-  ],
   "scripts": {
     "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
     "server": "nodemon index.js",
