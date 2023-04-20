@@ -47,6 +47,7 @@ app.get("/login", (req, res) => {
 app.get("/callback", (req, res) => {
   const code = req.query.code || null;
 
+  console.log(code);
   axios({
     method: "post",
     url: "https://accounts.spotify.com/api/token",
