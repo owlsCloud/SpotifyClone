@@ -16,7 +16,7 @@
     "client": "cd spotify-client && npm start",
     "postinstall": "cd spotify-client && npm install",
     "build": "NODE_ENV=production cd spotify-client/ && npm install && npm run build",
-    "start-server": "npm run server"
+    "start-server": "npm run server && npm run client"
   },
   "author": "",
   "license": "ISC",
