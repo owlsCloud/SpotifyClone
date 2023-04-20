@@ -13,6 +13,9 @@ const FRONTEND_URI = process.env.FRONTEND_URI;
 const PORT = process.env.PORT || 8888;
 
 // app.use(express.static(path.resolve(__dirname, "./spotify-client/build")));
+app.get("/", () => {
+  console.log("hello from express");
+});
 
 const generateRandomString = (length) => {
   let text = "";
