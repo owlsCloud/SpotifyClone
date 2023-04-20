@@ -25,7 +25,9 @@ const StyledLoginButton = styled.a`
 `;
 
 const LOGIN_URI =
-  process.env.NODE_ENV !== "production" ? "http://localhost:8888/login" : "";
+  process.env.NODE_ENV !== "production"
+    ? "http://localhost:8888/login"
+    : "https://spotifydashboard.netlify.app/login";
 
 const Login = () => (
   <StyledLoginContainer>
